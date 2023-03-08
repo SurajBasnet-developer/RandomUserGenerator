@@ -1,6 +1,76 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1ce9e9
 }
+
+body{
+  background-color: #cc3333;
+}
+
+.user-card{
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.user-image{
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  padding: 10px;
+  color: #d2eeee;
+}
+
+.user-name{
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #c4101f;
+}
+
+.user-email, .user-address, .user-phone{
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #a8268c;
+  font-size: 20px;
+}
+
+
+/* inspired form gumroad website */
+.button {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+
+
+
 
 .App-logo {
   height: 40vmin;
